@@ -11,8 +11,19 @@
         const add=(a,b)=>{
         return document.write(`The a and b substraction is ${a+b}`)
         }
-        sub(8,2)
-        add(3,4)
+        setInterval(()=>
+        {add(2,3)}
+        ,3000)
+        setTimeout(()=>
+        {add(2,3)}
+        ,4000)
+        setInterval(()=>
+        {sub(2,3)}
+        ,3000)
+        setTimeout(()=>
+        {sub(2,3)}
+        ,4000)
+
     </script>
 </head>
 <body>
