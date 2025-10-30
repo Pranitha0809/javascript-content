@@ -18,17 +18,52 @@
     //  console.log(c.name,c.age,c.empid)
     //ES5
     //declaration
-    function add(){
-        //scope
-       let a= prompt("enter the name ")
-       let b= prompt("Enter your age")
-       document.write(a,b)
+    // function add(){
+    //     //scope
+    //    let a= prompt("enter the name ")
+    //    let b= prompt("Enter your age")
+    //    document.write(a,b)
+    // }
+    // add()//invocation
+    //ES6
+    // const add = ()=>{
+    //     let a= prompt("enter the name ")
+    //    let b= prompt("Enter your age")
+    //    document.write(a,b)
+    // }
+    // var c = add()
+    // console.log(c)
+    //  const add = ()=>{
+    //     let a= Number(prompt("enter a "))
+    //    let b= Number(prompt("Enter b"))
+    //    alert(a+b)
+    // }
+    //  add()
+    //  add()
+    //ES7
+    // let a = Number(prompt("enter a"))
+    // let b = Number(prompt("enter b"))
+    //  const add = ()=>alert(a+b)
+    //  add()
+    const url="./assets/pic.jpg"
+    const demo=()=>{
+        console.log(url)
+        document.getElementById("text").innerHTML=`<img src=${url}/><p>hello hyderabad</p>`
     }
-    add()//invocation
-    
+    const buttoncolor=()=>{
+        document.getElementById("changecolor").style.backgroundColor="black"
+        document,getElementById("changecolor").style.color="white"
+    }
+    const buttoncolor1=()=>{
+        document.getElementById("changecolor").style.backgroundColor="white"
+        document,getElementById("changecolor").style.color="black"
+    }
     </script>
 </head>
-<body>
-    
+<body id="changecolor">
+    <p id="text">hello word</p>
+    <button onclick="demo()"> change click</button>
+    <button onclick="buttoncolor()">dark mode</button>
+    <button onclick="buttoncolor1()">light mode</button>
 </body>
 </html>
